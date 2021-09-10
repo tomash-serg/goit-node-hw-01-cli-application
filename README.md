@@ -8,12 +8,12 @@ npm run app:list
 
 npm run app:get [id]
 
-![alt text](screens/2.png "list")
+![alt text](screens/2.png "get")
 
 npm run app:remove [id]
 
-![alt text](screens/3.png "list")
+![alt text](screens/3.png "remove")
 
 npm run app:add -- -n [name] -e [email] -p [phone number]
 
-![alt text](screens/4.png "list")
+![alt text](screens/4.png "add")
