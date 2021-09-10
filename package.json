@@ -8,7 +8,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
     "dev": "nodemon start",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "app:list": "node src/index.js -a list",
+    "app:get": "node src/index.js -a get -i",
+    "app:remove": "node src/index.js -a remove -i",
+    "app:add": "node src/index.js -a add"
   },
   "repository": {
     "type": "git",
