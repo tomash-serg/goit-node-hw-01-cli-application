@@ -4,16 +4,16 @@ goit-node-hw-01-cli-application
 
 npm run app:list
 
-![alt text](screens/1.png "list")
+![alt text](https://ibb.co/1mSD9V1 "list")
 
 npm run app:get [id]
 
-![alt text](screens/2.png "get")
+![alt text](https://ibb.co/2n4C3YD "get")
 
 npm run app:remove [id]
 
-![alt text](screens/3.png "remove")
+![alt text](https://ibb.co/BchKQ3n "remove")
 
 npm run app:add -- -n [name] -e [email] -p [phone number]
 
-![alt text](screens/4.png "add")
+![alt text](https://ibb.co/47TBQvc "add")
