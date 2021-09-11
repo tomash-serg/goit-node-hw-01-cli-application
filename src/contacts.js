@@ -7,7 +7,7 @@ const contactsPath = path.join(__dirname, "db/contacts.json");
 
 async function listContacts() {
   try {
-    const file = await fs.readFile(contactsPath);
+    const file = await fs.readFile(contactsPath, "utf-8");
     return JSON.parse(file);
   } catch (error) {
     console.warn(error.message);
@@ -37,11 +37,11 @@ async function removeContact(contactId) {
   }
 }
 
-async function addContact({ name, email, phone }) {
+async function addContact(contact) {
   try {
     const contacts = await listContacts();
     const id = crypto.randomUUID({ disableEntropyCache: false });
-    contacts.push({ name, email, phone, id });
+    contacts.push({ ...contact, id });
     await fs.writeFile(contactsPath, JSON.stringify(contacts));
     return await listContacts();
   } catch (error) {
